@@ -1,0 +1,256 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+/*Font*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Overpass', sans-serif;
+  color: white;
+}
+
+
+a {
+  color: white;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* ==========================================================================
+   Preloader
+   ========================================================================== */
+.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: black;
+}
+
+.preloader-circle {
+  position: fixed;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+  opacity: 0;
+  z-index: 21;
+  /*shape & color*/
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/*animations*/
+.preloader-circle:first-child {
+  -webkit-animation: loader 2s infinite;
+  animation: loader 2s infinite;
+}
+
+.preloader-circle:nth-child(2) {
+  -webkit-animation: loader 2s 1s infinite cubic-bezier(0, 0, 0.32, 1.08);
+  animation: loader 2s 1s infinite cubic-bezier(0, 0, 0.32, 1.08);
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Custom Styles
+   ========================================================================== */
+html {
+  background-color: #050505;
+}
+
+/*HEADER*/
+header {
+  display: -webkit-box;
+  display: flex;
+  height: 60px;
+}
+
+header h5 {
+  margin: auto;
+  font-size: 2.1em;
+}
+
+/*map settings*/
+main.map {
+  height: calc(100vh - 60px - 22px);
+}
+
+main {
+  min-height: calc(100vh - 60px - 22px);
+}
+
+#vmap {
+  width: 100%;
+  height: calc(100vh - 60px - 50px - 22px);
+  background-color: red;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.jqvmap-zoomin,
+.jqvmap-zoomout {
+  display: none;
+}
+@media only screen and (max-width:480px) {
+  main.map {
+    height: calc(100vh - 60px - 22px - 60px);
+  }
+
+  main {
+    min-height: calc(100vh - 60px - 22px - 60px);
+  }
+
+  #vmap {
+    height: calc(100vh - 60px - 50px - 22px - 60px);
+  }
+}
+
+.legend {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.legend p {
+  color: white;
+}
+
+.legend p:first-child {
+  margin-right: 30px;
+}
+
+.legend p i {
+  -webkit-transform: translateY(2.5px);
+  transform: translateY(2.5px);
+  font-size: 1rem !important;
+}
+
+.legend p i.photographed {
+  color: yellow;
+}
+
+.legend p i.visited {
+  color: grey;
+}
+
+@media only screen and (max-width:480px) {
+  #vmap>svg>g {
+    -webkit-transform: scale(0.85) translate(-90.4, 77.3) !important;
+    transform: scale(0.85) translate(-90.4, 77.3) !important;
+  }
+}
+
+/*PICTURES*/
+div.pictures {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+div.pictures>div {
+  margin: auto;
+  text-align: center;
+  max-width: 900px;
+}
+
+div.pictures>div img {
+  max-width: 95%;
+  max-height: 700px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+div.country>div:nth-child(1)>img {
+  margin-top: 30px;
+}
+
+div.pictures>div p {
+  margin: 10px 0 30px 0;
+}
+
+#materialbox-overlay {
+  /* materialize fix */
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
+.pictures .country {
+  display: none;
+}
+
+.btn-floating.btn-large i {
+  /* materialize fix */
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.fixed-action-btn {
+  /* materialize fix */
+  left: 23px;
+  right: unset;
+}
+
+i#back-button {
+  /* materialize fix */
+  color: black;
+}
+
+@media only screen and (max-width:969px) {}
+
+/*footer*/
+.footer-copyright p {
+  color: darkgrey;
+  font-size: 0.8rem;
+}

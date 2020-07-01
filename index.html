@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Worldwide Pictures</title>
+  <meta name="description"
+    content="Pictures I took around the world.">
+
+  <!-- icons & theme color-->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+  <!-- <meta name="theme-color" content="#1c45b8" /> -->
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/template.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+  <link href="css/main.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="jqvmap/jqvmap.min.css" media="screen" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="loading">
+  <!--PRELOADER-->
+  <div class="preloader">
+    <div class="preloader-circle"></div>
+    <div class="preloader-circle"></div>
+  </div>
+  <!---->
+  <header class='z-depth-4'>
+    <h5>Mateo Krössler</h5>
+  </header>
+
+
+	<main class='map'>
+    <div id="vmap" class='slide'></div>
+		<div id="legend" class="legend">
+			<p id="poronga" ><i class="material-icons photographed">label</i> photographed countries</p>
+			<p><i class="material-icons visited">label</i> visited countries</p>
+    </div>
+    <div id='pictures' class='pictures' style="display:none" >
+      <div class="fixed-action-btn hide-on-large-only">
+        <a class="btn-floating btn-large waves-effect waves-light yellow">
+          <i class="large material-icons" id='back-button'>arrow_back_ios</i>
+        </a>
+      </div>
+      <div class='country argentina'>
+        <img class="lozad materialboxed" data-src="img/ar-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-10-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-11-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-12-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-13-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-14-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-15-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-16-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-17-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-18-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-4-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-5-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-6-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-7-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-8-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ar-9-min.jpg" />
+      </div>
+      <div class='country austria'>
+        <img class="lozad materialboxed" data-src="img/at-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/at-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/at-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/at-3-min.jpg" />
+      </div>
+      <div class='country belgium'>
+        <img class="lozad materialboxed" data-src="img/be-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/be-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/be-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/be-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/be-4-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/be-5-min.jpg" />
+      </div>
+      <div class='country czech-republic'>
+        <img class="lozad materialboxed" data-src="img/cz-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/cz-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/cz-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/cz-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/cz-4-min.jpg" />
+      </div>
+      <div class='country germany'>
+        <img class="lozad materialboxed" data-src="img/de-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/de-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/de-2-min.jpg" />
+      </div>
+      <div class='country france'>
+        <img class="lozad materialboxed" data-src="img/fr-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-10-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-11-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-12-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-13-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-4-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-5-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-6-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-7-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-8-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/fr-9-min.jpg" />
+      </div>
+      <div class='country united-kingdom'>
+        <img class="lozad materialboxed" data-src="img/gb-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/gb-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/gb-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/gb-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/gb-4-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/gb-5-min.jpg" />
+      </div>
+      <div class='country hungary'>
+        <img class="lozad materialboxed" data-src="img/hu-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/hu-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/hu-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/hu-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/hu-4-min.jpg" />
+      </div>
+      <div class='country italy'>
+        <img class="lozad materialboxed" data-src="img/it-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/it-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/it-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/it-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/it-4-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/it-5-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/it-6-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/it-7-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/it-8-min.jpg" />
+      </div>
+      <div class='country morocco'>
+        <img class="lozad materialboxed" data-src="img/ma-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-10-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-11-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-12-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-13-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-14-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-15-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-16-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-17-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-18-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-19-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-20-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-21-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-22-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-23-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-24-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-25-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-26-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-27-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-28-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-29-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-30-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-31-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-4-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-5-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-6-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-7-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-8-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/ma-9-min.jpg" />
+      </div>
+      <div class='country mexico'>
+        <img class="lozad materialboxed" data-src="img/mx-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/mx-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/mx-2-min.jpg" />
+      </div>
+      <div class='country netherlands'>
+        <img class="lozad materialboxed" data-src="img/nl-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/nl-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/nl-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/nl-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/nl-4-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/nl-5-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/nl-6-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/nl-7-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/nl-8-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/nl-9-min.jpg" />
+      </div>
+      <div class='country portugal'>
+        <img class="lozad materialboxed" data-src="img/pt-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/pt-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/pt-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/pt-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/pt-4-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/pt-5-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/pt-6-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/pt-7-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/pt-8-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/pt-9-min.jpg" />
+      </div>
+      <div class='country united-states-of-america'>
+        <img class="lozad materialboxed" data-src="img/us-0-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/us-1-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/us-2-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/us-3-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/us-4-min.jpg" />
+        <img class="lozad materialboxed" data-src="img/us-5-min.jpg" />
+      </div>
+    </div>
+	</main>
+
+  <footer>
+    <div class="footer-copyright">
+      <div class="container">
+        <p class="center-align">
+          Copyright © <span class="year">2020</span>
+          <a href="index.php">Mateo Krossler.</a> All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="jqvmap/jquery.vmap.js"></script>
+  <script type="text/javascript" src="jqvmap/maps/jquery.vmap.world.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/map.min.js"></script>
+
+ 
+
+</body>
+
+</html>
